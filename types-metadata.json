@@ -1,0 +1,28 @@
+{
+    "authors": "Rogier Schouten <https://github.com/rogierschouten>",
+    "libraryDependencies": [
+        "node"
+    ],
+    "moduleDependencies": [
+        "events",
+        "fs",
+        "net",
+        "tls"
+    ],
+    "libraryMajorVersion": 0,
+    "libraryMinorVersion": 2,
+    "libraryName": "ftpd",
+    "typingsPackageName": "ftpd",
+    "projectName": "https://github.com/sstur/nodeftpd",
+    "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+    "sourceBranch": "types-2.0",
+    "globals": [],
+    "declaredModules": [
+        "ftpd"
+    ],
+    "files": [
+        "index.d.ts"
+    ],
+    "hasPackageJson": false,
+    "contentHash": "e984dc6942bdbeb9302c6c1191ba7d266e348e27537033058080b9505af7aea3"
+}
