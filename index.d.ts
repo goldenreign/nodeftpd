@@ -25,6 +25,10 @@ export const enum LogLevel {
  */
 export interface FtpServerOptions {
     /**
+     * Provide net.Server object (for cluster implementation)
+     */
+    server?: net.Server
+    /**
      * Gets the initial working directory for the user. Called after user is authenticated
      * Typical cases where you would want/need the callback involve retrieving configurations from external datasources and suchlike.
      */
@@ -198,6 +202,11 @@ export declare class FtpServer extends events.EventEmitter {
      * @param options See test.js for a simple example.
      */
     constructor(host: string, options: FtpServerOptions);
+
+    /**
+     * Expose internal server object for clustering
+     */
+    public server: net.Server;
 
     /**
      * Start listening, see net.Server.listen()
